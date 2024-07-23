@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <h1 id="h1">Project</h1>
+    <!--mainDiv starts.....................................-->
+    <div id="mainDiv">
+
+        <div id="mD1">
+            <h2 id="h2">SIGNUP</h2>
+        </div>
+
+        <div id="form">
+            <form action="/signup" method="post">
+                
+                <div class="forminput">
+                    <label for="name"><h3>Name:&nbsp;</h3></label>
+                    <input type="text" id="name" name="name" placeholder="Enter name" required>
+                </div>
+                
+                <div class="forminput">
+                    <label for="email"><h3>Email:&nbsp;</h3></label>
+                    <input type="email" id="email" name="email" placeholder="Enter email-id">
+                </div>
+
+                <div class="forminput">
+                    <label for="phone"><h3>Contact:&nbsp;</h3></label>
+                    <input type="number" id="phone" name="phone" placeholder="Enter phone number" maxlength="10">
+                </div>
+
+                <div class="forminput">
+                    <label for="dob"><h3>DOB:&nbsp;</h3></label>
+                    <input type="date" id="dob" name="dob" placeholder="Enter date of birth">
+                </div>
+
+                <div class="forminput">
+                    <label for="password"><h3>Password:&nbsp;</h3></label>
+                    <input type="password" id="password" name="password" placeholder="Enter password">
+                </div>
+
+                <div id="submit1">
+                    <!--<button id="button">Submit</button>-->
+                    <input type="submit" value="submit" id="submit">
+                </div>
+            </form>
+        </div>
+    
+    </div>
+    <!--mainDiv ends here.....................................-->
+    <br>
+    <br>
+    <!--
+    <script>
+        let btn = document.getElementById("button");
+        btn.addEventListener("click" , ()=>{
+            let name1 = document.getElementById("name").value; 
+            let email1 = document.getElementById("email").value; 
+            let phone1 = document.getElementById("phone").value; 
+            let pass1 = document.getElementById("password").value; 
+            let dob1 = document.getElementById("dob").value; 
+            let username1 = name.slice(0,3) + phone.toString().slice(0,3);
+
+            let obj = {
+                username : username1,
+                name : name1,
+                email : email1,
+                phone : phone1,
+                DOB : dob1,
+                password : pass1
+            };
+            axios.post('/signup', {
+                username : username1,
+                name : name1,
+                email : email1,
+                phone : phone1,
+                DOB : dob1,
+                password : pass1
+            })
+            .then(function (response) {
+            console.log(response);
+            })
+            .catch(function (error) {
+            console.log(error);
+            });
+        });
+        
+    </script>
+-->
+</body>
+</html>

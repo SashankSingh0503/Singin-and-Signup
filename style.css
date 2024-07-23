@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(23,23,23);
+}
+#h1{
+    color: white;
+    font-family:monospace;
+    font-size: 60px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-shadow: 10px 0px 20px gray;
+}
+#mainDiv{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-right: 5px solid white;
+    border-left: 5px solid white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+#mD1{
+    background: linear-gradient(to top,rgb(106, 143, 106),darkgreen);
+}
+#h2{
+    font-size: 35px;
+    font-family:monospace;
+    text-align: center;
+    text-shadow: 1px 0px 5px darkgreen;
+}
+.forminput{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 5%;
+}
+input{
+    height: max-content;
+    justify-content:stretch;
+    background-color: rgb(23,23,23);
+    border-bottom: 2px solid red;
+    border-right: 8px solid red;
+    color:lightyellow;
+
+}
+input::placeholder,h3{
+    color:lightyellow;
+}
+#submit1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: lightyellow;
+}
+#user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#user h3{
+    color: red;
+}
+h4{
+    font-size: 20px;
+    color: white;
+}
